@@ -3,6 +3,7 @@
 //
 #include "main.h"
 #include "usart.h"
+#include "string.h"
 extern RC_Ctl_t RC_CtrlData;
 extern RC RC_showcase;
 extern uint8_t rx_buffer[18];
@@ -67,6 +68,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
     // RC_showcase.mouse_x = RC_CtrlData.mouse.x;
     // RC_showcase.mouse_y = RC_CtrlData.mouse.y;
     // RC_showcase.mouse_z = RC_CtrlData.mouse.z;//映射
-
+    memset(rx_buffer,0,sizeof(rx_buffer));
     HAL_UART_Receive_DMA(&huart1,rx_buffer,18U);
 }
