@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -89,14 +90,14 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM1_Init();
   MX_TIM6_Init();
   MX_UART7_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_TogglePin(LED_G_GPIO_Port,LED_G_Pin);
-  HAL_GPIO_TogglePin(LED_R_GPIO_Port,LED_R_Pin);
-  //HAL_UART_Receive_IT(&huart7,rxData,1);
+  // HAL_UART_Transmit_IT(&huart7,txData,1);
+  HAL_UART_Receive_DMA(&huart7,rxData,1);
 
   /* USER CODE END 2 */
 
@@ -105,6 +106,10 @@ int main(void)
     while (1)
     {
 
+      //以下为电灯与闪烁
+      HAL_GPIO_TogglePin(LED_G_GPIO_Port,LED_G_Pin);
+      HAL_GPIO_TogglePin(LED_R_GPIO_Port,LED_R_Pin);
+      HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

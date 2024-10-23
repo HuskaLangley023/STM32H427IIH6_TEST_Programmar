@@ -3,6 +3,7 @@
 "testcode\callback.o"
 "testcode\main.o"
 "testcode\gpio.o"
+"testcode\dma.o"
 "testcode\tim.o"
 "testcode\usart.o"
 "testcode\stm32f4xx_it.o"

@@ -1,4 +1,4 @@
-testcode/callback.o: ..\Core\Src\Callback.c ..\Core\Inc\main.h \
+testcode/dma.o: ..\Core\Src\dma.c ..\Core\Inc\dma.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -28,6 +28,4 @@ testcode/callback.o: ..\Core\Src\Callback.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\usart.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h
