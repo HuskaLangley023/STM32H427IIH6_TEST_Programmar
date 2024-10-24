@@ -6,6 +6,7 @@
 "testcode\stm32f4xx_it.o"
 "testcode\stm32f4xx_hal_msp.o"
 "testcode\callback.o"
+"testcode\m3508.o"
 "testcode\stm32f4xx_hal_can.o"
 "testcode\stm32f4xx_hal_rcc.o"
 "testcode\stm32f4xx_hal_rcc_ex.o"

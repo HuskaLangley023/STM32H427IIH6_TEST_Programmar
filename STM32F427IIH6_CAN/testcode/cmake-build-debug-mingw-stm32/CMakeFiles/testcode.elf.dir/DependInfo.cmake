@@ -30,6 +30,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/M3508.c" "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj.d"
   "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/callback.c" "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj.d"
   "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/can.c" "CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj.d"
   "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/gpio.c" "CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj.d"
@@ -55,6 +56,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" "CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj.d"
   "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" "CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj.d"
   "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" "CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj.d"
+  "D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/M3508.cpp" "CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj" "gcc" "CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

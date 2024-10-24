@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj"
+  "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj.d"
+  "CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj"
+  "CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj"
   "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj"
@@ -56,6 +60,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C)
+foreach(lang ASM C CXX)
   include(CMakeFiles/testcode.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

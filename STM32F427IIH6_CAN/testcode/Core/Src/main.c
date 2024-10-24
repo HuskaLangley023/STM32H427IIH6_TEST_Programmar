@@ -20,12 +20,16 @@
 #include "main.h"
 #include "can.h"
 #include "gpio.h"
+#include "M3508.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 uint8_t rx_buffer[8];
 uint8_t tx_buffer[8];
-M3508_Motor motor = {10,10,10};
+M3508_Motor motor;
+float Motor_ratio_ = 19;
+
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -70,7 +74,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  motor_init(&motor);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -93,10 +97,6 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
-  motor.ratio_ = 19;
-
-
-
 
 
 
@@ -117,10 +117,17 @@ int main(void)
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
-
-
-  // uint32_t tx_mailbox;
-  // uint8_t tx_buffer[8] = {0x11,0x22,0x33,0x44,0x55,0x66,0x77,0x88};
+  //下为控制电流代码
+  CAN_TxHeaderTypeDef tx_header = {
+    .StdId = 0x200,
+    .ExtId = 0x01,
+    .IDE = CAN_ID_STD,
+    .RTR = CAN_RTR_DATA,
+    .DLC = 8,
+    .TransmitGlobalTime = DISABLE
+    };
+  uint32_t tx_mailbox;
+  uint8_t tx_buffer[8] = {0x11,0x22,0x33,0x44,0x55,0x66,0x77,0x88};
 
 
   /* USER CODE END 2 */
@@ -129,6 +136,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    HAL_CAN_AddTxMessage(&hcan1, &tx_header, tx_buffer, &tx_mailbox);//控制电机
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

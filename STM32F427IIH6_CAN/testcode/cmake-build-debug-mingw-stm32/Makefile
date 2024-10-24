@@ -128,6 +128,54 @@ testcode.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/build
 .PHONY : testcode.elf/fast
 
+Core/Src/M3508.obj: Core/Src/M3508.c.obj
+.PHONY : Core/Src/M3508.obj
+
+# target to build an object file
+Core/Src/M3508.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj
+.PHONY : Core/Src/M3508.c.obj
+
+Core/Src/M3508.i: Core/Src/M3508.c.i
+.PHONY : Core/Src/M3508.i
+
+# target to preprocess a source file
+Core/Src/M3508.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.i
+.PHONY : Core/Src/M3508.c.i
+
+Core/Src/M3508.s: Core/Src/M3508.c.s
+.PHONY : Core/Src/M3508.s
+
+# target to generate assembly for a file
+Core/Src/M3508.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.s
+.PHONY : Core/Src/M3508.c.s
+
+Core/Src/M3508.obj: Core/Src/M3508.cpp.obj
+.PHONY : Core/Src/M3508.obj
+
+# target to build an object file
+Core/Src/M3508.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj
+.PHONY : Core/Src/M3508.cpp.obj
+
+Core/Src/M3508.i: Core/Src/M3508.cpp.i
+.PHONY : Core/Src/M3508.i
+
+# target to preprocess a source file
+Core/Src/M3508.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.i
+.PHONY : Core/Src/M3508.cpp.i
+
+Core/Src/M3508.s: Core/Src/M3508.cpp.s
+.PHONY : Core/Src/M3508.s
+
+# target to generate assembly for a file
+Core/Src/M3508.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.s
+.PHONY : Core/Src/M3508.cpp.s
+
 Core/Src/callback.obj: Core/Src/callback.c.obj
 .PHONY : Core/Src/callback.obj
 
@@ -745,6 +793,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... testcode.elf
+	@echo ... Core/Src/M3508.obj
+	@echo ... Core/Src/M3508.i
+	@echo ... Core/Src/M3508.s
+	@echo ... Core/Src/M3508.obj
+	@echo ... Core/Src/M3508.i
+	@echo ... Core/Src/M3508.s
 	@echo ... Core/Src/callback.obj
 	@echo ... Core/Src/callback.i
 	@echo ... Core/Src/callback.s
