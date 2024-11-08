@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj"
   "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj.d"
-  "CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj"
-  "CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj"
   "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj"
@@ -11,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj.d"
+  "CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj"
+  "CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
   "CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d"
   "CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_it.c.obj"

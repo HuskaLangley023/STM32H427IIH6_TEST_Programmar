@@ -24,6 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89b71918-5468-47fb-9d47-ee326945b209" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_CAN_Communication/testcode/MDK-ARM/testcode.uvguix.zhu_y" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_CAN_Communication/testcode/MDK-ARM/testcode.uvguix.zhu_y" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_CAN_Communication/testcode/MDK-ARM/testcode.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_CAN_Communication/testcode/MDK-ARM/testcode.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/MDK-ARM/testcode.uvguix.zhu_y" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/MDK-ARM/testcode.uvguix.zhu_y" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/cmakeFiles-v1-728562fc75c6754f8d26.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/index-2024-10-15T06-21-01-0757.json" beforeDir="false" />
@@ -36,6 +40,12 @@
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/cmake-build-debug-mingw-stm32/CMakeFiles/testcode.elf.dir/Core/Src/Callback.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/cmake-build-debug-mingw-stm32/CMakeFiles/testcode.elf.dir/Core/Src/Callback.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_DBUS/testcode/cmake-build-debug-mingw-stm32/testcode.elf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode.uvguix.zhu_y" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode.uvguix.zhu_y" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/callback.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/callback.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode.axf" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode_testcode.dep" beforeDir="false" afterPath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/MDK-ARM/testcode/testcode_testcode.dep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/cache-v2-81023b37e1c6594eca01.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/codemodel-v2-cda579f0c7b32d698b52.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../STM32F427IIH6_TEST1_PWM_UART/testcode/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
@@ -106,11 +116,6 @@
   }
 }</component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.testcode.elf">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testcode.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testcode" TARGET_NAME="testcode.elf" CONFIG_NAME="Debug-MinGW-STM32" RUN_TARGET_PROJECT_NAME="testcode" RUN_TARGET_NAME="testcode.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -144,6 +149,13 @@
       <workItem from="1729700534039" duration="162000" />
       <workItem from="1729700702447" duration="847000" />
       <workItem from="1729736950291" duration="5024000" />
+      <workItem from="1729774284150" duration="138000" />
+      <workItem from="1729922037236" duration="3762000" />
+      <workItem from="1730030477209" duration="29000" />
+      <workItem from="1730288141291" duration="1734000" />
+      <workItem from="1730291478255" duration="735000" />
+      <workItem from="1730292322071" duration="1342000" />
+      <workItem from="1730524750084" duration="43000" />
     </task>
     <servers />
   </component>

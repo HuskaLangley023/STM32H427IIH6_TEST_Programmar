@@ -82,24 +82,10 @@ CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.s"
 	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\M3508.c -o CMakeFiles\testcode.elf.dir\Core\Src\M3508.c.s
 
-CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj: CMakeFiles/testcode.elf.dir/flags.make
-CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/M3508.cpp
-CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj: CMakeFiles/testcode.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj"
-	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj -MF CMakeFiles\testcode.elf.dir\Core\Src\M3508.cpp.obj.d -o CMakeFiles\testcode.elf.dir\Core\Src\M3508.cpp.obj -c D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\M3508.cpp
-
-CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.i"
-	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\M3508.cpp > CMakeFiles\testcode.elf.dir\Core\Src\M3508.cpp.i
-
-CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.s"
-	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\M3508.cpp -o CMakeFiles\testcode.elf.dir\Core\Src\M3508.cpp.s
-
 CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj: CMakeFiles/testcode.elf.dir/flags.make
 CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/callback.c
 CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj: CMakeFiles/testcode.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj"
 	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj -MF CMakeFiles\testcode.elf.dir\Core\Src\callback.c.obj.d -o CMakeFiles\testcode.elf.dir\Core\Src\callback.c.obj -c D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\callback.c
 
 CMakeFiles/testcode.elf.dir/Core/Src/callback.c.i: cmake_force
@@ -113,7 +99,7 @@ CMakeFiles/testcode.elf.dir/Core/Src/callback.c.s: cmake_force
 CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj: CMakeFiles/testcode.elf.dir/flags.make
 CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/can.c
 CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj: CMakeFiles/testcode.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj"
 	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj -MF CMakeFiles\testcode.elf.dir\Core\Src\can.c.obj.d -o CMakeFiles\testcode.elf.dir\Core\Src\can.c.obj -c D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\can.c
 
 CMakeFiles/testcode.elf.dir/Core/Src/can.c.i: cmake_force
@@ -127,7 +113,7 @@ CMakeFiles/testcode.elf.dir/Core/Src/can.c.s: cmake_force
 CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/testcode.elf.dir/flags.make
 CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/gpio.c
 CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/testcode.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj"
 	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\testcode.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\testcode.elf.dir\Core\Src\gpio.c.obj -c D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\gpio.c
 
 CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -141,7 +127,7 @@ CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj: CMakeFiles/testcode.elf.dir/flags.make
 CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/main.c
 CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj: CMakeFiles/testcode.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj"
 	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\testcode.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\testcode.elf.dir\Core\Src\main.c.obj -c D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\main.c
 
 CMakeFiles/testcode.elf.dir/Core/Src/main.c.i: cmake_force
@@ -151,6 +137,20 @@ CMakeFiles/testcode.elf.dir/Core/Src/main.c.i: cmake_force
 CMakeFiles/testcode.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/testcode.elf.dir/Core/Src/main.c.s"
 	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\main.c -o CMakeFiles\testcode.elf.dir\Core\Src\main.c.s
+
+CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj: CMakeFiles/testcode.elf.dir/flags.make
+CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/pid.cpp
+CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj: CMakeFiles/testcode.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RM_Projects\STM32F427IIH6_CAN\testcode\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj"
+	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj -MF CMakeFiles\testcode.elf.dir\Core\Src\pid.cpp.obj.d -o CMakeFiles\testcode.elf.dir\Core\Src\pid.cpp.obj -c D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\pid.cpp
+
+CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.i"
+	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\pid.cpp > CMakeFiles\testcode.elf.dir\Core\Src\pid.cpp.i
+
+CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.s"
+	C:\ST\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\RM_Projects\STM32F427IIH6_CAN\testcode\Core\Src\pid.cpp -o CMakeFiles\testcode.elf.dir\Core\Src\pid.cpp.s
 
 CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/testcode.elf.dir/flags.make
 CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/RM_Projects/STM32F427IIH6_CAN/testcode/Core/Src/stm32f4xx_hal_msp.c
@@ -462,11 +462,11 @@ CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_e
 # Object files for target testcode.elf
 testcode_elf_OBJECTS = \
 "CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj" \
-"CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj" \
+"CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_it.c.obj" \
 "CMakeFiles/testcode.elf.dir/Core/Src/syscalls.c.obj" \
@@ -494,11 +494,11 @@ testcode_elf_OBJECTS = \
 testcode_elf_EXTERNAL_OBJECTS =
 
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.obj
-testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/callback.c.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/can.c.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/main.c.obj
+testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/stm32f4xx_it.c.obj
 testcode.elf: CMakeFiles/testcode.elf.dir/Core/Src/syscalls.c.obj

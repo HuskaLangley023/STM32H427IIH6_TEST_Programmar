@@ -152,30 +152,6 @@ Core/Src/M3508.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.c.s
 .PHONY : Core/Src/M3508.c.s
 
-Core/Src/M3508.obj: Core/Src/M3508.cpp.obj
-.PHONY : Core/Src/M3508.obj
-
-# target to build an object file
-Core/Src/M3508.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.obj
-.PHONY : Core/Src/M3508.cpp.obj
-
-Core/Src/M3508.i: Core/Src/M3508.cpp.i
-.PHONY : Core/Src/M3508.i
-
-# target to preprocess a source file
-Core/Src/M3508.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.i
-.PHONY : Core/Src/M3508.cpp.i
-
-Core/Src/M3508.s: Core/Src/M3508.cpp.s
-.PHONY : Core/Src/M3508.s
-
-# target to generate assembly for a file
-Core/Src/M3508.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/M3508.cpp.s
-.PHONY : Core/Src/M3508.cpp.s
-
 Core/Src/callback.obj: Core/Src/callback.c.obj
 .PHONY : Core/Src/callback.obj
 
@@ -271,6 +247,30 @@ Core/Src/main.s: Core/Src/main.c.s
 Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
+
+Core/Src/pid.obj: Core/Src/pid.cpp.obj
+.PHONY : Core/Src/pid.obj
+
+# target to build an object file
+Core/Src/pid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.obj
+.PHONY : Core/Src/pid.cpp.obj
+
+Core/Src/pid.i: Core/Src/pid.cpp.i
+.PHONY : Core/Src/pid.i
+
+# target to preprocess a source file
+Core/Src/pid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.i
+.PHONY : Core/Src/pid.cpp.i
+
+Core/Src/pid.s: Core/Src/pid.cpp.s
+.PHONY : Core/Src/pid.s
+
+# target to generate assembly for a file
+Core/Src/pid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/pid.cpp.s
+.PHONY : Core/Src/pid.cpp.s
 
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
@@ -796,9 +796,6 @@ help:
 	@echo ... Core/Src/M3508.obj
 	@echo ... Core/Src/M3508.i
 	@echo ... Core/Src/M3508.s
-	@echo ... Core/Src/M3508.obj
-	@echo ... Core/Src/M3508.i
-	@echo ... Core/Src/M3508.s
 	@echo ... Core/Src/callback.obj
 	@echo ... Core/Src/callback.i
 	@echo ... Core/Src/callback.s
@@ -811,6 +808,9 @@ help:
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/pid.obj
+	@echo ... Core/Src/pid.i
+	@echo ... Core/Src/pid.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s

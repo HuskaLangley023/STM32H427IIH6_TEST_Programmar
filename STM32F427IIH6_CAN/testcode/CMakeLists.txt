@@ -59,6 +59,8 @@ set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F427IIHX_FLASH.ld
         Core/Src/callback.c
         Core/Inc/M3508.h
         Core/Src/M3508.c
+        Core/Inc/pid.h
+        Core/Src/pid.cpp
 
 )
 

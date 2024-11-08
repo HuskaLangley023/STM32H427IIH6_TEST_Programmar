@@ -136,7 +136,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_CAN_AddTxMessage(&hcan1, &tx_header, tx_buffer, &tx_mailbox);//控制电机
+    // HAL_CAN_AddTxMessage(&hcan1, &tx_header, tx_buffer, &tx_mailbox);//控制电机
+
+    // HAL_Delay(5000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
