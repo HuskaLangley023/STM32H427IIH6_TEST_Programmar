@@ -34,7 +34,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-uint8_t rx_data;
+uint8_t rx_data[6];
 uint8_t tx_reg;
 uint8_t tx_buffer[8];
 uint8_t rx_buffer[8];

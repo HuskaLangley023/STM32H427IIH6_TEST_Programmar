@@ -13,9 +13,9 @@
 
 typedef struct {
 
-        // float acc_rate_x;
-        // float acc_rate_y;
-        // float acc_rate_z;
+        float acc_rate_x;
+        float acc_rate_y;
+        float acc_rate_z;
 
         float gy_rate_x;
         float gy_rate_y;
@@ -30,8 +30,8 @@ void BMI088_GYRO_NS_H(void);
 
 void BMI088_Read_Reg_ACCEL(uint8_t reg, uint8_t *return_data, uint8_t length);
 void BMI088_Read_Reg_GYRO(uint8_t reg, uint8_t *return_data, uint8_t length);
-void BMI088_Write_Reg_ACCEL(uint8_t reg, uint8_t write_data, uint8_t length);
-void BMI088_Write_Reg_GYRO(uint8_t reg, uint8_t write_data, uint8_t length);
+void BMI088_Write_Reg_ACCEL(uint8_t reg, uint8_t write_data);
+void BMI088_Write_Reg_GYRO(uint8_t reg, uint8_t write_data);
 
 void BMI088_Init(void);
 
