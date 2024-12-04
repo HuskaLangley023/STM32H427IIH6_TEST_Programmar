@@ -5,7 +5,6 @@
 #ifndef CONTROL_H
 #define CONTROL_H
 #include "main.h"
-#include "motor.h"
 
 
 
@@ -14,6 +13,8 @@ extern "C"
 {
 #endif
 void mainloop();
+void motorinit();
+void imuinit();
 #ifdef __cplusplus
 }
 #endif

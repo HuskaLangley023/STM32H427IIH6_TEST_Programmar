@@ -31,8 +31,10 @@ testcode/control.o: ..\Core\Src\control.cpp ..\Core\Inc\control.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_iwdg.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\motor.h ..\Core\Inc\PID.h ..\Core\Inc\iwdg.h \
-  ..\Core\Inc\usart.h
+  ..\Core\Inc\iwdg.h ..\Core\Inc\usart.h ..\Core\Inc\motor.h \
+  ..\Core\Inc\PID.h ..\Core\Inc\imu.h ..\Core\Inc\math.h \
+  ..\Core\Inc\spi.h ..\Core\Inc\tim.h

@@ -296,6 +296,30 @@ Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
+Core/Src/imu.obj: Core/Src/imu.cpp.obj
+.PHONY : Core/Src/imu.obj
+
+# target to build an object file
+Core/Src/imu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/imu.cpp.obj
+.PHONY : Core/Src/imu.cpp.obj
+
+Core/Src/imu.i: Core/Src/imu.cpp.i
+.PHONY : Core/Src/imu.i
+
+# target to preprocess a source file
+Core/Src/imu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/imu.cpp.i
+.PHONY : Core/Src/imu.cpp.i
+
+Core/Src/imu.s: Core/Src/imu.cpp.s
+.PHONY : Core/Src/imu.s
+
+# target to generate assembly for a file
+Core/Src/imu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/imu.cpp.s
+.PHONY : Core/Src/imu.cpp.s
+
 Core/Src/iwdg.obj: Core/Src/iwdg.c.obj
 .PHONY : Core/Src/iwdg.obj
 
@@ -415,6 +439,30 @@ Core/Src/remote.s: Core/Src/remote.cpp.s
 Core/Src/remote.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/remote.cpp.s
 .PHONY : Core/Src/remote.cpp.s
+
+Core/Src/spi.obj: Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.obj
+
+# target to build an object file
+Core/Src/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.c.obj
+
+Core/Src/spi.i: Core/Src/spi.c.i
+.PHONY : Core/Src/spi.i
+
+# target to preprocess a source file
+Core/Src/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/spi.c.i
+.PHONY : Core/Src/spi.c.i
+
+Core/Src/spi.s: Core/Src/spi.c.s
+.PHONY : Core/Src/spi.s
+
+# target to generate assembly for a file
+Core/Src/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Core/Src/spi.c.s
+.PHONY : Core/Src/spi.c.s
 
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
@@ -952,6 +1000,30 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
+
+# target to build an object file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
+
+# target to preprocess a source file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
+
+# target to generate assembly for a file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testcode.elf.dir\build.make CMakeFiles/testcode.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 
@@ -1054,6 +1126,9 @@ help:
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
+	@echo ... Core/Src/imu.obj
+	@echo ... Core/Src/imu.i
+	@echo ... Core/Src/imu.s
 	@echo ... Core/Src/iwdg.obj
 	@echo ... Core/Src/iwdg.i
 	@echo ... Core/Src/iwdg.s
@@ -1069,6 +1144,9 @@ help:
 	@echo ... Core/Src/remote.obj
 	@echo ... Core/Src/remote.i
 	@echo ... Core/Src/remote.s
+	@echo ... Core/Src/spi.obj
+	@echo ... Core/Src/spi.i
+	@echo ... Core/Src/spi.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s
@@ -1136,6 +1214,9 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s

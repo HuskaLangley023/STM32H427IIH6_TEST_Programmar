@@ -21,6 +21,7 @@
 #include "can.h"
 #include "dma.h"
 #include "iwdg.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -99,9 +100,13 @@ int main(void)
   MX_CAN1_Init();
   MX_CAN2_Init();
   MX_USART1_UART_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim6);
   canInit();
+  motorinit();
+  imuinit();
+  HAL_Delay(1);
+  HAL_TIM_Base_Start_IT(&htim6);
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -7,8 +7,17 @@
 #include "PID.h"
 
 #ifdef __cplusplus
+
+#define GMP_Offset -140
+
 class Motor {
 public:
+    enum Signature {
+        GMY,
+        GMP,
+        GMFL,
+        GMFR,
+    }sign;
     enum type {
         M3508,
         M2006,
@@ -58,11 +67,12 @@ type type_m;
 
     PID ppid_, spid_;
 
-    Motor(const type &type, const float &ratio, const PID &ppid,const PID &spid, ControlMethod);
+    Motor(const type &type, const float &ratio, const PID &ppid,const PID &spid, ControlMethod, Signature sign);
     void setAngle(float);
     void handle();
     void setvoltage(float);
     void sendMsg();
+    void reset();
 };
 
 
@@ -74,8 +84,11 @@ public:
     void canMotorsCallback(CAN_HandleTypeDef *hcan, CAN_RxHeaderTypeDef rx_header, uint8_t rx_data[8]);
 
     void control();
+    void motorsinit();
 
 };
+
+
 
 void canRxHandle(CAN_HandleTypeDef *hcan, CAN_RxHeaderTypeDef rx_header, uint8_t rx_data[8]);
 #endif

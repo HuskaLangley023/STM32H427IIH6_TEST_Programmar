@@ -4,17 +4,26 @@
 #include "control.h"
 #include "iwdg.h"
 #include "usart.h"
+#include "motor.h"
+#include "imu.h"
 
-uint8_t rx_buffer[18]; //uart通讯缓冲区
+// uint8_t rx_buffer[18]; //uart通讯缓冲区
 extern MotorManagement motors;
-uint32_t a = 0;
+extern IMU bmi088;
+int b = 0;
 
 void mainloop() {
     HAL_IWDG_Refresh(&hiwdg);
     // HAL_UART_Receive_DMA(&huart1, rx_buffer, 18U);
+b++;
+    bmi088.receive();
+    // motors.control();
+}
 
-    motors.control();
-    a++;
+void motorinit() {
+    motors.motorsinit();
+}
 
-
+void imuinit() {
+    bmi088.init();
 }

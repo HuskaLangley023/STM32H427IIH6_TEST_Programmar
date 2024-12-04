@@ -37,5 +37,8 @@ float loopLimit(float value, const float& min, const float& max);
 
 float degNormalize180(const float& angle);
 float rpm2dps(const float& w);
+
+float gyro_lsb2dps(const float& in);
+float acc_lsb2g(const float& in);
 #endif
 #endif //MATH_H

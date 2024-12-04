@@ -8,8 +8,9 @@
 #include "can.h"
 #include "usart.h"
 #include "string.h"
+#include "motor.h"
 
-uint8_t rx_data[8];
+// uint8_t rx_data[8];
 extern uint8_t rx_buffer[18];
 
 //定时器中断控制mainloop，周期1000Hz
@@ -24,7 +25,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 //接收机代码
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     //信息接收
-    // uint8_t rx_data[8];
+    uint8_t rx_data[8];
     CAN_RxHeaderTypeDef rx_header;
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, rx_data);
     //信息处理

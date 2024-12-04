@@ -12,39 +12,48 @@ float Amplitude_p = 25;
 float Offset_p = 227;
 float Amplitude_y = 60;
 float Offset_y = 100;
-uint32_t b = 0;
-uint32_t c = 0;
 
-uint8_t TxData[8] = { 0 };
 
-Motor::Motor(const type &type, const float &ratio, const PID &ppid,const PID &spid, ControlMethod method)
+Motor::Motor(const type &type, const float &ratio, const PID &ppid,const PID &spid, ControlMethod method, Signature sign)
     : type_m(type),
       ratio_(ratio),
       ppid_(ppid),
       spid_(spid),
-      method_(method) {
+      method_(method),
+      sign(sign){
     control_data_.target_angle_ = 0;
 }
 
 Motor GMY(Motor::M6020, 1,
-        PID(10, 0.1, 10, 10, 1800),
+        PID(150, 0.1, 10, 10, 1800),
         PID(10, 2, 0, 500, 30000),
-        Motor::POSITION_SPEED); //Yaw轴电机
+        Motor::POSITION_SPEED, Motor::GMY); //Yaw轴电机
 Motor GMP(Motor::M6020, 1,
-        PID(10, 0.1, 10, 10, 1800),
-        PID(400, 2, 0, 500, 30000),
-        Motor::POSITION_SPEED); //Pitch轴电机
+        PID(150, 0.1, 10, 10, 1800),
+        PID(10, 2, 0, 500, 30000),
+        Motor::POSITION_SPEED, Motor::GMP); //Pitch轴电机
 Motor GMFL(Motor::M3508, 3591.f / 87.f,
         PID(20, 0.1, 10, 10, 2500),
         PID(400, 2, 0, 500, 30000),
-        Motor::POSITION_SPEED); //左摩擦轮电机
+        Motor::POSITION_SPEED, Motor::GMFL); //左摩擦轮电机
 Motor GMFR(Motor::M3508, 3591.f / 87.f,
         PID(20, 0.1, 10, 10, 2500),
         PID(400, 2, 0, 500, 30000),
-        Motor::POSITION_SPEED); //右摩擦轮电机
+        Motor::POSITION_SPEED, Motor::GMFR); //右摩擦轮电机
 
 void Motor::setAngle(float angle) {
+    if(sign == GMP) {
+        angle = limit<float>(angle,-165 ,-105 );
+    }
     control_data_.target_angle_ = angle;
+}
+
+void Motor::reset() {
+    if(sign == GMY) {
+        setAngle(0);
+    }else if(sign == GMP) {
+        setAngle(GMP_Offset);
+    }
 }
 
 
@@ -69,7 +78,7 @@ void Motor::setvoltage(float output) { //可能要调整为setvoltage
 
 void Motor::sendMsg() {
     CAN_TxHeaderTypeDef TxHeader;
-    // uint8_t TxData[8] = { 0 };
+    uint8_t TxData[8] = { 0 };
     uint32_t TxMailbox;
 
     TxHeader.StdId = 0x1FF;
@@ -150,7 +159,8 @@ void MotorManagement::canMotorsCallback(CAN_HandleTypeDef *hcan, CAN_RxHeaderTyp
 
 }
 
-float test_angle = 180;
+float test_angle_P = -140; //测试用
+float test_angle_Y = 0; //测试用
 void MotorManagement::control() {
     //处理发送数据
     // float remote_input_p = rc.control_data_[3];
@@ -160,12 +170,20 @@ void MotorManagement::control() {
     float remote_input_y = rc.control_data_[2];
     float target_angle_y = Amplitude_y * remote_input_y + Offset_y;
     // GMY.setAngle(target_angle_y);
-    motors[1]->setAngle(test_angle); //Yaw
+    motors[0]->setAngle(test_angle_P); //Pitch
+    motors[0]->handle();
+    motors[1]->setAngle(test_angle_Y); //Yaw
     motors[1]->handle();
 
-    motors[1]->sendMsg();
-    // motors[]->sendMsg();
+    motors[0]->sendMsg(); //Pitch
+    motors[1]->sendMsg(); //Yaw
 }
+
+void MotorManagement::motorsinit() {
+    motors[0]->reset();
+    motors[1]->reset();
+}
+
 
 //在can接收中断回调函数中调用，用于间接调用MotorManagement中canMotorsCallback()
 void canRxHandle(CAN_HandleTypeDef *hcan, CAN_RxHeaderTypeDef rx_header, uint8_t rx_data[8]) {
