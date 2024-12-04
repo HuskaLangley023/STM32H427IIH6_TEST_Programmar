@@ -24,6 +24,7 @@ testcode/motor.o: ..\Core\Src\motor.cpp ..\Core\Inc\motor.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
@@ -32,4 +33,8 @@ testcode/motor.o: ..\Core\Src\motor.cpp ..\Core\Inc\motor.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Core\Inc\math.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
+  ..\Core\Inc\PID.h ..\Core\Inc\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Core\Inc\remote.h \
+  ..\Core\Inc\can.h

@@ -5,7 +5,9 @@
 #ifndef PID_H
 #define PID_H
 
-
+#ifdef __cplusplus
+// extern "C"{
+// #endif
 class PID {
 public:
     float kp_, ki_, kd_;
@@ -20,6 +22,8 @@ public:
     PID(float kp, float ki, float kd, float i_max, float out_max);
     PID();
 };
-
+// #ifdef __cplusplus
+// }
+#endif
 
 #endif //PID_H

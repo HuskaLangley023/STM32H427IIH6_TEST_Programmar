@@ -5,8 +5,8 @@
 
 #include "math.h"
 
-PID::PID(float kp = 0, float ki = 0, float kd = 0,
-         float i_max = 0, float out_max = 0)
+PID::PID(float kp, float ki, float kd,
+         float i_max, float out_max)
     :kp_(kp),
      ki_(ki),
      kd_(kd),
@@ -34,10 +34,6 @@ float PID::calc(float ref, float fdb) {
 }
 
 
-void PID::deal_error(float ref, float fdb) {
-    float pid_current = 10000 * calc(ref, fdb) / out_max_;
-    control_current(pid_current);
-}
 
 
 

@@ -11,8 +11,14 @@
 
 
 
-
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 void canInit();
+#ifdef __cplusplus
+}
+#endif
 
 void canMotorsTxMsg();
 
